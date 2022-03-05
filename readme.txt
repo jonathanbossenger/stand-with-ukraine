@@ -16,5 +16,8 @@ Displays a banner on your site to show your support for Ukraine. Customize your 
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Initial Release
+
+= 1.0.0 =
 * Initial Release
