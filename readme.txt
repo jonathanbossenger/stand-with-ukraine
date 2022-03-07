@@ -10,6 +10,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Displays a banner and link on your site to show your support for Ukraine.
 
+Styles are output inline for performance reasons, but can be filtered using the `swu_banner_styles` filter hook should you wish to customise them.
+
 == Description ==
 
 Displays a banner on your site to show your support for Ukraine. Customize your banner using the #stand_with_ukraine_overlay id attribute.
@@ -17,6 +19,8 @@ Displays a banner on your site to show your support for Ukraine. Customize your 
 == Changelog ==
 
 = 1.0.3 =
+* Improved link styles
+* Inline CSS for performance
 * Make strings translatable
 
 = 1.0.2 =

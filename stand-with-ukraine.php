@@ -33,13 +33,32 @@ function swu_enqueue_script( $hook ) {
 	) );
 
 	wp_enqueue_script( 'stand-with-ukraine' );
+}
 
-	wp_register_style(
-		'stand-with-ukraine',
-		SWU_PLUGIN_URL . 'stand_with_ukraine.css',
-		array(),
-		'1.0.0',
-		'all'
-	);
-	wp_enqueue_style( 'stand-with-ukraine' );
+
+add_action( 'wp_head', 'swu_output_css' );
+function swu_output_css() {
+	echo apply_filters( 'swu_banner_styles', '
+		<style>
+			#stand_with_ukraine_overlay {
+				border: 10px solid #0057B8;
+				padding: 5px;
+				text-align: center;
+				text-combine: #0057B8;
+				background-color: #FFD700;
+				margin-bottom: 8px;
+			}
+			#stand_with_ukraine_overlay a {
+				display: inline-block;
+				padding: 3px 6px;
+				color: #0057B8;
+				text-decoration: underline;
+			}
+			#stand_with_ukraine_overlay a:hover,
+			#stand_with_ukraine_overlay a:focus {
+				border: 2px #0057B8 dashed;
+				text-decoration: underline;
+			}
+		</style>
+	' );
 }
