@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Stand With Ukraine
  * Description:     Displays a banner on your site to show your support for Ukraine.
- * Version:         1.0.2
+ * Version:         1.0.3
  *
  * @package         Stand_With_Ukraine
  */
@@ -23,7 +23,7 @@ function swu_enqueue_script( $hook ) {
 		'stand-with-ukraine',
 		SWU_PLUGIN_URL . 'stand_with_ukraine.js',
 		array(),
-		'1.0.1',
+		'1.0.3',
 		true
 	);
 
