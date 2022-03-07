@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Stand With Ukraine
  * Description:     Displays a banner on your site to show your support for Ukraine.
- * Version:         1.0.2
+ * Version:         1.0.3
  *
  * @package         Stand_With_Ukraine
  */
@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'SWU_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'SWU_TEXT_DOMAIN', 'stand-with-ukraine' );
 
 /**
  * Enqueue JavaScript assets
@@ -22,11 +23,18 @@ function swu_enqueue_script( $hook ) {
 		'stand-with-ukraine',
 		SWU_PLUGIN_URL . 'stand_with_ukraine.js',
 		array(),
-		'1.0.1',
+		'1.0.3',
 		true
 	);
+
+	wp_localize_script( 'stand-with-ukraine', 'swu_options', array(
+		'text' => esc_html( __( '#StandWithUkraine',      SWU_TEXT_DOMAIN ) ),
+		'url'  => esc_url( __( 'https://war.ukraine.ua/', SWU_TEXT_DOMAIN ) )
+	) );
+
 	wp_enqueue_script( 'stand-with-ukraine' );
 }
+
 
 add_action( 'wp_head', 'swu_output_css' );
 function swu_output_css() {

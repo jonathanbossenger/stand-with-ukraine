@@ -21,6 +21,7 @@ Displays a banner on your site to show your support for Ukraine. Customize your 
 = 1.0.3 =
 * Improved link styles
 * Inline CSS for performance
+* Make strings translatable
 
 = 1.0.2 =
 * Change: usage of jQuery, not longer necessary
