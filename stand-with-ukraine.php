@@ -30,7 +30,7 @@ function swu_enqueue_script( $hook ) {
 
 add_action( 'wp_head', 'swu_output_css' );
 function swu_output_css() {
-	echo '
+	echo apply_filters( 'swu_banner_styles', '
 		<style>
 			#stand_with_ukraine_overlay {
 				border: 10px solid #0057B8;
@@ -52,5 +52,5 @@ function swu_output_css() {
 				text-decoration: underline;
 			}
 		</style>
-	';
+	' );
 }
