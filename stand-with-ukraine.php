@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Stand With Ukraine
  * Description:     Displays a banner on your site to show your support for Ukraine.
- * Version:         1.0.1
+ * Version:         1.0.2
  *
  * @package         Stand_With_Ukraine
  */
@@ -21,8 +21,8 @@ function swu_enqueue_script( $hook ) {
 	wp_register_script(
 		'stand-with-ukraine',
 		SWU_PLUGIN_URL . 'stand_with_ukraine.js',
-		array( 'jquery' ),
-		'1.0.0',
+		array(),
+		'1.0.1',
 		true
 	);
 	wp_enqueue_script( 'stand-with-ukraine' );
