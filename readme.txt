@@ -1,5 +1,5 @@
 === Stand With Ukraine ===
-Contributors: psykro, alpipego, bueltge, magicroundabout, luehrsen, mariussilvester
+Contributors: psykro, alpipego, bueltge, magicroundabout, luehrsen, mariussilvester, jobthomas
 Tags: standwithukraine
 Requires at least: 4.6
 Tested up to: 5.9
@@ -22,6 +22,9 @@ Displays a banner on your site to show your support for Ukraine. Customize your 
 2. Banner display on a website.
 
 == Changelog ==
+
+= 1.0.5 =
+* Prevent focus "hopping" 
 
 = 1.0.4 =
 * I18n fixes
