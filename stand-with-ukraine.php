@@ -4,6 +4,7 @@
  * Description:     Displays a banner on your site to show your support for Ukraine.
  * Version:         1.0.4
  * Text Domain:     stand-with-ukraine
+ * License:         GPLv2 or later
  *
  * @package         Stand_With_Ukraine
  */
