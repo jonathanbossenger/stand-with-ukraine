@@ -58,6 +58,7 @@ function swu_output_css() {
 				display: inline-block;
 				padding: 3px 6px;
 				color: #0057B8;
+				border: 2px transparent dashed;
 				text-decoration: underline;
 			}
 			#stand_with_ukraine_overlay a:hover,
