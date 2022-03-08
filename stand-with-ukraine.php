@@ -3,6 +3,7 @@
  * Plugin Name:     Stand With Ukraine
  * Description:     Displays a banner on your site to show your support for Ukraine.
  * Version:         1.0.3
+ * Text Domain:     stand-with-ukraine
  *
  * @package         Stand_With_Ukraine
  */
@@ -12,13 +13,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'SWU_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define( 'SWU_TEXT_DOMAIN', 'stand-with-ukraine' );
 
 /**
  * Enqueue JavaScript assets
  */
 add_action( 'wp_enqueue_scripts', 'swu_enqueue_script' );
 function swu_enqueue_script( $hook ) {
+
+	$swu_text = __( 'Stand With Ukraine', 'stand-with-ukraine' );
+	$swu_hash_tag = '#' . str_replace( ' ', '', $swu_text);
+	$swu_url = __( 'https://war.ukraine.ua/', 'stand-with-ukraine' );
+
 	wp_register_script(
 		'stand-with-ukraine',
 		SWU_PLUGIN_URL . 'stand_with_ukraine.js',
@@ -28,8 +33,9 @@ function swu_enqueue_script( $hook ) {
 	);
 
 	wp_localize_script( 'stand-with-ukraine', 'swu_options', array(
-		'text' => esc_html( __( '#StandWithUkraine',      SWU_TEXT_DOMAIN ) ),
-		'url'  => esc_url( __( 'https://war.ukraine.ua/', SWU_TEXT_DOMAIN ) )
+		'text' => esc_html( $swu_text ),
+		'hashtag' => esc_html( $swu_hash_tag ),
+		'url'  => esc_url( $swu_url )
 	) );
 
 	wp_enqueue_script( 'stand-with-ukraine' );
@@ -46,7 +52,6 @@ function swu_output_css() {
 				text-align: center;
 				text-combine: #0057B8;
 				background-color: #FFD700;
-				margin-bottom: 8px;
 			}
 			#stand_with_ukraine_overlay a {
 				display: inline-block;
