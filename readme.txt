@@ -1,8 +1,8 @@
 === Stand With Ukraine ===
 Contributors: psykro, alpipego, bueltge, magicroundabout
 Tags: standwithukraine
-Requires at least: 4.5
-Tested up to: 5.9.1
+Requires at least: 4.6
+Tested up to: 5.9
 Requires PHP: 5.6
 Stable tag: 1.0.4
 License: GPLv2 or later
