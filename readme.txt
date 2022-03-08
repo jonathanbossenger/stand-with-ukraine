@@ -16,6 +16,11 @@ Styles are output inline for performance reasons, but can be filtered using the 
 
 Displays a banner on your site to show your support for Ukraine. Customize your banner using the `#stand_with_ukraine_overlay` CSS ID-attribute.
 
+== Screenshots ==
+
+1. Banner display on a website.
+2. Banner display on a website.
+
 == Changelog ==
 
 = 1.0.4 =
