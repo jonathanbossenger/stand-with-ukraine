@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Stand With Ukraine
  * Description:     Displays a banner on your site to show your support for Ukraine.
- * Version:         1.0.3
+ * Version:         1.0.4
  * Text Domain:     stand-with-ukraine
  *
  * @package         Stand_With_Ukraine
