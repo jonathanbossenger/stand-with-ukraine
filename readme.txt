@@ -4,7 +4,7 @@ Tags: standwithukraine
 Requires at least: 4.6
 Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ Displays a banner on your site to show your support for Ukraine. Customize your 
 == Changelog ==
 
 = 1.0.5 =
-* Prevent focus "hopping" 
+* Prevent focus "hopping"
 
 = 1.0.4 =
 * I18n fixes
