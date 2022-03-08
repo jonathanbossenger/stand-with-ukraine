@@ -1,5 +1,5 @@
 === Stand With Ukraine ===
-Contributors: psykro, alpipego, bueltge, magicroundabout
+Contributors: psykro, alpipego, bueltge, magicroundabout, luehrsen, mariussilvester
 Tags: standwithukraine
 Requires at least: 4.6
 Tested up to: 5.9
