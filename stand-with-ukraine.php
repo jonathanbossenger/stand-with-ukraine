@@ -48,23 +48,17 @@ function swu_output_css() {
 	echo apply_filters( 'swu_banner_styles', '
 		<style>
 			#stand_with_ukraine_overlay {
-				border: 10px solid #0057B8;
-				padding: 5px;
+				border-top: 32px solid #0057B8;
 				text-align: center;
-				text-combine: #0057B8;
 				background-color: #FFD700;
 			}
 			#stand_with_ukraine_overlay a {
-				display: inline-block;
-				padding: 3px 6px;
+				display: block;
+				line-height: 32px;
+				font-size: 16px;
 				color: #0057B8;
-				border: 2px transparent dashed;
-				text-decoration: underline;
-			}
-			#stand_with_ukraine_overlay a:hover,
-			#stand_with_ukraine_overlay a:focus {
-				border: 2px #0057B8 dashed;
-				text-decoration: underline;
+				font-weight: bold;
+				outline: 0 !important;
 			}
 		</style>
 	' );
